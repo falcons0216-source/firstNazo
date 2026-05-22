@@ -94,17 +94,39 @@ h1{
     font-size: 18px;
 
     cursor: pointer;
+
+    position: relative;
+
+    display: inline-block;
 }
 
 
 /* 打消し線 */
-.strike{
+/* .strike{
 
     text-decoration: line-through;
 
     color: black;
-}
+} */
 
+.strike::after{
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    top: 50%;
+
+    width: 100%;
+
+    height: 2px;
+
+    background: black;
+
+    transform: translateY(-50%);
+}
 
 /* ラジオボタン */
 input[type="radio"]{
