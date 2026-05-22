@@ -153,6 +153,8 @@ if(q.image){
 
     checkButton.textContent = "判定";
 
+    checkButton.id = "checkBtn";
+
 
     // 判定結果
     const result =
