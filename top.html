@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>注意事項</title>
+
+    <link rel="stylesheet"
+          href="styles.css">
+
+</head>
+
+<body class="topBody">
+
+    <div class="topCard">
+
+        <h1>察し謎</h1>
+
+        <p>
+            ハイコンテクスト文化に生きるあなたなら
+            <br>
+            出題者の意図を察して、正しく解答できるはず。
+            <br>
+            次の注意事項を読んで、早速遊んでみてね
+        </p>
+
+        <ul class="noticeList">
+
+            <li>全5問です</li>
+
+            <li>問題文を選択すると打消し線が引かれます</li>
+
+            <li>デバッグなんかしていません。<br>うまく動かなかったらごめんね</li>
+
+            <li>スマホでの動作確認はしていません</li>
+
+            <li>仲間内で遊ぶために作ったので著作権ガン無視です。</li>
+
+            <li>答えは必ずしも正確とは限りません。<br>なんとなく察することが大切です</li>
+
+        </ul>
+
+
+        <input
+            type="text"
+            id="nextInput"
+            placeholder="「さっそく」と入力">
+
+        <button id="startButton">
+            開始
+        </button>
+
+    </div>
+
+
+    <script>
+
+        const button =
+            document.querySelector(
+                "#startButton"
+            );
+
+        button.addEventListener(
+            "click",
+            () => {
+
+                const input =
+                    document.querySelector(
+                        "#nextInput"
+                    ).value;
+
+
+                if(input === "さっそく"){
+
+                    window.location.href =
+                        "nazo.html";
+
+                }else{
+
+                    alert(
+                        "ひらがなで「さっそく」と入力してください"
+                    );
+
+                }
+
+            }
+        );
+
+    </script>
+
+</body>
+
+</html>
